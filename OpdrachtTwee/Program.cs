@@ -47,91 +47,119 @@ namespace OpdrachtTwee
         {
             MultiChoice quest1 = new MultiChoice()
             {
-                Ques = "Vraag: Hoeveel poten heeft een normale hond?\n",
-                Ans = "A",
-                Grade = 1,
-                Category = "Dier"
+                Quest = "Question: When did Kekistan exist and where was it located?\n",
+                Answ = "A",
+                Difficulty = 2,
+                Categ = "History"
             };
 
-            quest1.AddKeuzen("A: 4");
-            quest1.AddKeuzen("B: 2");
-            quest1.AddKeuzen("C: 5");
-            quest1.AddKeuzen("D: Geen");
+            quest1.AddMultiChoice("A: 2300 B.P.(Before Pepe), to the north of Iran, to the east of Cuckistan and to the south/southeast of Normistan");
+            quest1.AddMultiChoice("B: Modern ages, doesn't have a country(choose only if you're a fucking normie)");
+            quest1.AddMultiChoice("C: Stone age, stone kek men");
+            quest1.AddMultiChoice("D: Are you serious right now?");
 
-            MultiVraag v2 = new MultiVraag()
+            MultiChoice quest2 = new MultiChoice()
             {
-                Ques = "Vraag: Noem een Japans auto merk\n",
-                Ans = "D",
-                Grade = 3,
-                Category = "Auto"
+                Quest = "Question: who is the lord and saviour of Kekistan?\n",
+                Answ = "D",
+                Difficulty = 3,
+                Categ = "Kekistan"
             };
 
-            v2.AddKeuzen("A: BMW");
-            v2.AddKeuzen("B: Mercedus");
-            v2.AddKeuzen("C: Volkswagen");
-            v2.AddKeuzen("D: Honda");
+            quest2.AddMultiChoice("A: Pepe?");
+            quest2.AddMultiChoice("B: Pepe!");
+            quest2.AddMultiChoice("C: Pepe!!!1");
+            quest2.AddMultiChoice("D: Pepe");
 
-            MultiVraag v3 = new MultiVraag()
+            MultiChoice quest3 = new MultiChoice()
             {
-                Ques = "Vraag: 1+1=\n",
-                Ans = "D",
-                Grade = 2,
-                Category = "Wiskunde"
+                Quest = "Question: meow?\n",
+                Answ = "C",
+                Difficulty = 1,
+                Categ = "Cats"
             };
 
-            v3.AddKeuzen("A: 1.1");
-            v3.AddKeuzen("B: 11");
-            v3.AddKeuzen("C: 10");
-            v3.AddKeuzen("D: 2");
+            quest3.AddMultiChoice("A: Buck Buck!");
+            quest3.AddMultiChoice("B: Raff Raff");
+            quest3.AddMultiChoice("C: Meow");
+            quest3.AddMultiChoice("D: Gaaaaaaaaaaaaaaaaaaay");
 
-            MultiVraag v4 = new MultiVraag()
+            MultiChoice quest4 = new MultiChoice()
             {
-                Ques = "Hoeveel magen heeft een koe?\n",
-                Ans = "C",
-                Grade = 2,
-                Category = "Dier"
+                Quest = "Question: when did Kekistan get invaded?\n",
+                Answ = "B",
+                Difficulty = 3,
+                Categ = "History"
             };
 
-            v4.AddKeuzen("A: 1");
-            v4.AddKeuzen("B: 2");
-            v4.AddKeuzen("C: 4");
-            v4.AddKeuzen("D: Geen");
+            quest4.AddMultiChoice("A: Circa 2300 B.P.");
+            quest4.AddMultiChoice("B: Circa 2100 B.P.");
+            quest4.AddMultiChoice("C: Circa 1120 B.P.");
+            quest4.AddMultiChoice("D: 16 A.P.(After Pepe)");
+
+            MultiChoice quest5 = new MultiChoice()
+            {
+                Quest = "Question: What is the national anthem of Kekistan called?\n",
+                Answ = "B",
+                Difficulty = 2,
+                Categ = "Kekistan"
+            };
+
+            quest4.AddMultiChoice("A: Queen and Country");
+            quest4.AddMultiChoice("B: Shadilay(My Brothers)");
+            quest4.AddMultiChoice("C: Mawtini Mawtini");
+            quest4.AddMultiChoice("D: I dunno lol");
+
+            MultiChoice quest6 = new MultiChoice()
+            {
+                Quest = "Question: What do you call a mountain of kittens?\n",
+                Answ = "C",
+                Difficulty = 1,
+                Categ = "Cats"
+            };
+
+            quest4.AddMultiChoice("A: A mountain of kittens");
+            quest4.AddMultiChoice("B: Mount Everest");
+            quest4.AddMultiChoice("C: Meowntain");
+            quest4.AddMultiChoice("D: Mount Rushmore");
 
             controller.AddMultiChoiceQuest(quest1);
-            controller.AddMultiChoiceQuest(v2);
-            controller.AddMultiChoiceQuest(v3);
-            controller.AddMultiChoiceQuest(v4);
+            controller.AddMultiChoiceQuest(quest2);
+            controller.AddMultiChoiceQuest(quest3);
+            controller.AddMultiChoiceQuest(quest4);
+            controller.AddMultiChoiceQuest(quest5);
+            controller.AddMultiChoiceQuest(quest6);
         }
 
         public static void FillOpen()
         {
-            OpenVraag v1 = new OpenVraag()
+            Open quest1 = new Open()
             {
-                Ques = "Hoeveel 9's zitter en tussen 1 en 100?",
-                Ans = "20",
-                Grade = 1,
-                Category = "Wiskunde"
+                Quest = "Question: Which two candidates were prominent in the 2016 US election?",
+                Answ = "Trump And Hillary",
+                Difficulty = 1,
+                Categ = "Politics"
             };
 
-            OpenVraag v2 = new OpenVraag()
+            Open quest2 = new Open()
             {
-                Ques = "Wat is de eerste automerk?\n",
-                Ans = "Benz",
-                Grade = 2,
-                Category = "Auto"
+                Quest = "Question: What is the meaning of life?\n",
+                Answ = "42",
+                Difficulty = 3,
+                Categ = "Meaning of life"
             };
 
-            OpenVraag v3 = new OpenVraag()
+            Open quest3 = new Open()
             {
-                Ques = "Wat is de grootste dier ter wereld?\n",
-                Ans = "Blauwe Vinvis",
-                Grade = 3,
-                Category = "Dier"
+                Quest = "Question: If con is the opposite of pro, then what is the opposite of Congress?\n",
+                Answ = "Progress",
+                Difficulty = 2,
+                Categ = "Politics"
             };
 
-            controller.AddOpenQuest(v1);
-            controller.AddOpenQuest(v2);
-            controller.AddOpenQuest(v3);
+            controller.AddOpenQuest(quest1);
+            controller.AddOpenQuest(quest2);
+            controller.AddOpenQuest(quest3);
         }
     }
 }
